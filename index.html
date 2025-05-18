@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not Defteri</title>
+
+  <!-- CSS dosyasını bağla -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ana not kutusu konteyneri -->
+  <div id="not-kutusu">
+    <!-- Uygulama başlığı -->
+    <h2>Not Defteri</h2>
+
+    <!-- Not girme alanı -->
+    <textarea id="not-alani" placeholder="Notunuzu buraya yazın..."></textarea>
+
+    <!-- Kaydet ve Temizle butonları -->
+    <div style="display: flex; justify-content: space-between;">
+      <button onclick="notuKaydet()">Kaydet</button>
+      <button onclick="notlariTemizle()">Temizle</button>
+    </div>
+
+    <!-- Kayıtlı notların listeleneceği alan -->
+    <ul id="notlar-listesi" style="margin-top: 15px;"></ul>
+  </div>
+  
+
+  <!-- JavaScript dosyasını bağla -->
+  <script src="renderer.js"></script>
+</body>
+</html>
